@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+    #grillaHome {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: 120px 120px 2fr 150px;
+        grid-template-columns: auto;
+    }
+
+    #grillaNosotros {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: 120px 120px 2fr 150px;
+        grid-template-columns: auto;
+    }
+
+    #grillaProyectos {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: 120px 120px 2fr 150px;
+        grid-template-columns: auto;
+    }
+
+    #grillaIdMobiliario {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: 120px 120px 2fr 150px;
+        grid-template-columns: auto;
+
+    }
+
+    #grillaContacto {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-template-rows: 120px 120px 2fr 150px;
+        grid-template-columns: auto;
+
+    
+
+    }
+
+    .contact {
+        display: block;
+        justify-content: center;
+    }
+
+    .join {
+        width: 90%;
+        margin: auto;
+    }
+
+    .fa-brands {
+        padding: 0 10px;
+        font-size: 30px;
+      }
+
+      li {
+        float: right;
+      }
+}
+

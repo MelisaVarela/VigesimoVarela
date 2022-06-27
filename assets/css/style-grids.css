@@ -1,0 +1,332 @@
+/* Normalize */
+*,
+
+*::after,
+
+*::before {
+
+  margin: 0;
+
+  padding: 0;
+
+ box-sizing: border-box;
+
+}
+
+html {
+
+  font-family: "Inter", sans-serif;
+
+  color: gray;
+
+  margin: 0%;
+
+  padding: 0%;
+
+}
+
+body {
+
+  margin: 0%;
+
+  padding: 0%;
+
+  background-color: #fff;
+
+  color: black;
+
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 16px;
+
+ writing-mode: horizontal-tb;
+
+ width: 100%;
+}
+
+a {
+
+  text-decoration: none;
+
+ color: #0b0c0d;
+
+}
+
+ul{
+
+  list-style: none;
+
+}
+
+/* GRIDS */
+/* Se aplicó GRIDS a Index y Nosotros */
+
+#grillaHome {
+    display: grid;
+    grid-template-areas: 
+        "header nav"
+        "main main"
+        "footer footer";
+    grid-template-rows: 120px 3fr 250px;
+    grid-template-columns: 150px auto;
+}
+
+
+#grillaNosotros {
+    display: grid;
+    grid-template-areas: 
+      "header nav"
+      "main main"
+      "footer footer";
+    grid-template-rows: 120px 3fr 250px;
+    grid-template-columns: 150px auto;
+}
+
+#grillaProyectos {
+  display: grid;
+  grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: 120px 3fr 250px;
+  grid-template-columns: 150px auto;
+}
+
+#grillaIdMobiliario {
+  display: grid;
+  grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: 120px 3fr 250px;
+  grid-template-columns: 150px auto;
+}
+
+#grillaContacto {
+  display: grid;
+  grid-template-areas: 
+    "header nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: 120px 3fr 250px;
+  grid-template-columns: 150px auto;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* FLEXBOX */
+
+a.logoEmpresa {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.imageText {
+  display: flex;
+
+}
+
+/* css boxing */
+
+nav a {
+	display:inline-block;
+	text-decoration:none;
+	padding:10px 20px;
+	/*line-height:normal;*/
+	font-size:20px;
+	font-weight:bold;
+	/*-webkit-transition:all 500ms ease;*/
+	/*-o-transition:all 500ms ease;
+	transition:all 500ms ease;*/
+}
+
+ul {
+  padding-right: 10px;
+}
+
+li {
+  float: left;
+}
+
+.backGris {
+  background-color: #595858;
+}
+
+.fijo {
+	overflow:hidden; /* Eliminamos errores de float */
+	position: sticky;
+	top: 0;
+	z-index:1000;
+}
+
+.textoSlider {
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+  top: 50%;
+  /*
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+	text-shadow: 5px 10px 6px #8c8c8c;
+  */
+}
+
+.fontWhite {
+  color:#fff;
+}
+
+footer {
+  background-color: black;
+}
+
+.fa-brands {
+  padding: 0 20px;
+  font-size: 60px;
+}
+
+.copy {
+  text-align: center;
+  padding: 50px;
+}
+
+
+
+.imagen img {
+  max-width: 100%;
+  overflow: hidden;
+  height: max-content;
+}
+
+.padding {
+  padding: 30px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.join {
+  width: 30%;
+  /*margin: 0 auto;*/
+}
+
+.contactBorder {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.contactForm{  
+	/*width: 460px;*/
+	height: auto;
+	/*margin: 80px auto;*/
+	border-radius: 10px;  
+	padding-top: 30px;
+	/*padding-bottom: 20px;*/  
+	background-color: #EE5525; 
+	padding-left: 30px; 
+}
+  
+  
+input{
+	background-color: white; 
+	width: 80%; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: black; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+}
+  
+  
+textarea{
+	background-color: #fbfbfb; 
+	width: 405px; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #EE5525; 
+	margin-top: 10px;  
+	padding-left: 10px;
+	margin-bottom: 20px; 
+	padding-top: 15px; 
+}
+  
+  
+label{
+	display: block; 
+	float: center;  
+}
+  
+  
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px;   
+	margin-bottom: 20px; 
+	margin-top: 10px;   
+	text-transform: uppercase;
+	background-color: #EE5525; 
+	border-color: #EE5525; 
+	border-style: solid; 
+	border-radius: 10px;  
+	/*width: 420px;*/   
+	cursor: pointer;
+}
+
+.data {  
+	/*width: 460px;*/
+	height: auto;
+	/*margin: 80px auto;*/
+	border-radius: 10px;  
+	padding-top: 30px;
+	/*padding-bottom: 20px;*/  
+	/*background-color: #EE5525;*/
+	padding-left: 30px; 
+	border: solid 1px black;
+}
+
+
+
+
+
